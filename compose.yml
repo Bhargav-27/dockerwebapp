@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: bhargav271200/webapp:tag1
+   image: bhargav271200/webapp:tag2
    ports:
      - "3306:3306"
 
  application:
-   image: bhargav271200/webapp:tag2
+   image: bhargav271200/webapp:tag1
    ports:
      - "1234:8080"
    depends_on:
