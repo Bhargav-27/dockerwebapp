@@ -2,13 +2,13 @@
 version: "3"
 services:
  devopsdb:
-   image: bhargav271200/newapp1
+   image: bhargav271200/newapp1:dbimage
    ports:
-     - "3306:3306"
+     - "3305:3306"
 
  application:
-   image: bhargav271200/newapp1
+   image: bhargav271200/newapp1:appimage
    ports:
-     - "1234:8080"
+     - "1122:8080"
    depends_on:
      - "devopsdb"
